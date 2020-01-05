@@ -1,0 +1,99 @@
+.prices
+    min-height: 952px
+    padding: 53px 0 58px 0
+    &__subtitle
+        margin-top: 38px
+        text-align: center
+        color: #2e2e2e
+        font-size: 21px
+        font-weight: 300
+    &-item
+        margin-top: 34px
+        width: 265px
+        height: 355px
+        border: 1px solid #e9e9e9
+        background-color: #ffffff
+        &__content
+            padding: 11px 18px 20px 13px
+            width: 100%
+            height: 292px
+            display: flex
+            flex-direction: column
+            /* justify-content: center */
+            align-items: center
+            text-align: center
+        &__img 
+            display: block
+        &__title
+            width: 100%
+            height: 61px
+            background-color: #25333c   
+            display: flex
+            justify-content: center
+            align-items: center         
+            &-text
+                color: #ffffff
+                font-size: 16px
+                font-weight: 700
+                text-transform: uppercase
+                line-height: 16px
+        &__subtitle
+            margin-top: 12px
+            color: #2e2e2e
+            font-size: 14px
+            font-weight: 400
+            text-transform: uppercase
+        &__price
+            color: $main_color
+            font-size: 28px
+            line-height: 30px
+        &__descr
+            margin-top: 17px
+            color: #2e2e2e
+            font-size: 14px
+            font-weight: 300
+            line-height: 18px
+        .button
+            margin-top: 25px
+            &:hover
+                background-color: #dc5238
+    &__form-title
+        color: #3a3a3a
+        font-size: 28px
+        font-weight: 400
+        text-align: center
+        margin-top: 56px
+    &__form
+        width: 1140px
+        height: 166px
+        margin-top: 71px
+        border: 1px solid #898989
+        position: relative
+        input
+            border: 1px solid #898989
+            height: 47px
+            width: 270px
+            border-radius: 25px
+            margin-top: 66px
+            padding: 0 28px
+            &:nth-child(2)
+                margin-left: 160px
+    &__crown
+        position: absolute
+        width: 102px
+        height: 102px
+        border: 1px solid #e93b3b
+        border-radius: 100%
+        top: 0
+        left: 50%
+        transform: translate(-50%, -50%)
+        img
+            position: absolute
+            left: 50%
+            top: 50%
+            transform: translate(-50%, -50%)
+    .button_submit
+        position: absolute
+        bottom: 0
+        left: 50%
+        transform: translate(-50%, 50%)

@@ -1,0 +1,94 @@
+.promo
+    background: url('../img/promo_bg.jpg') center center/cover no-repeat
+    min-height: 680px
+    .header
+        padding-top: 23px
+        display: flex
+        align-items: center
+        &__logo 
+            margin-right: 55px
+            img
+                width: 96px
+                height: 100px
+        &__menu
+            list-style-type: none
+            display: flex 
+            align-items: center
+            justify-content: flex-end
+            margin: 0 
+            padding: 0
+            margin-right: 50px
+        &__menu-item
+            border-right: 1px dotted black   
+            padding: 0 10px
+            &:last-child
+                border-right: none   
+        &__menu-link
+            color: #ffffff
+            font-size: 15px
+            font-weight: 400
+            line-height: 16.71px
+            &:hover
+                color: $main-color
+                text-decoration: none
+                transition: .3s all
+        &__callus
+            display: flex
+            flex-direction: column
+            justify-content: center
+            margin-right: 19px
+        &__text
+            color: #ffffff
+            font-size: 14px
+            font-weight: 300
+        &__main-phone
+            display: block
+            color: #ffffff
+            font-size: 19px
+            font-weight: 700
+    &__content
+        text-align: center
+        margin-top: 10px
+    &__uptext
+        color: #ffffff
+        font-size: 24px
+        font-weight: 300
+        line-height: 24px
+    &__title
+        color: $main-color
+        font-family: "Roboto Condensed"
+        font-size: 72px
+        line-height: 72px
+        font-weight: 700
+        text-transform: uppercase
+    &__subtitle
+        color: #ffffff
+        font-family: "Roboto Condensed"
+        font-size: 42px
+        font-weight: 400
+        text-transform: uppercase
+        line-height: 42px
+    &__splitter
+        width: 809px
+        border: 1px solid white
+        margin: 0 auto
+        margin-top: 38px
+    
+    
+    &__cards
+        display: flex
+        justify-content: space-between
+        margin-top: 27px
+        &-item
+            width: 250px
+    &__imgwrap
+        width: 67px
+        height: 63px
+        margin: 0 auto
+    &__descr
+        color: #ffffff
+        font-size: 16px
+        font-weight: 300
+        line-height: 22px
+        text-align: center
+        margin-top: 19px
