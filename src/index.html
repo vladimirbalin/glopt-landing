@@ -8,7 +8,7 @@
     <title>Glopt</title>
 </head>
 <body>
-    <section class="promo">
+    <section class="promo" id="up">
         <div class="container">
             <header class="header">                
                 <a href="#" class="header__logo">
@@ -24,7 +24,7 @@
                   </ul>
                 <div class="header__callus">
                     <div class="header__text">Есть вопросы?</div>
-                    <a href="tel:79264230100" class="header__main-phone">+7 (926) 423 01 00</a>
+                    <a href="tel:+79264230100" class="header__main-phone">+7 (926) 423 01 00</a>
                 </div>
                 <button class="button">Перезвоните мне</button>
             </header>
@@ -33,7 +33,8 @@
                 <h1 class="promo__title">ДОСТАВКА ГРУЗОВ ИЗ КИТАЯ</h1>
                 <h2 class="promo__subtitle">В РОССИЮ И СНГ ВСЕМИ ВИДАМИ ТРАНСПОРТА</h2>
             </div>
-            <div class="promo__splitter"></div>
+            <fieldset class="promo__splitter"><legend><div class="promo__legend"></div></legend></fieldset>>
+            <!-- <div class="promo__splitter"></div> -->
             <div class="promo__cards">
                 <div class="promo__cards-item">
                     <div class="promo__imgwrap"><img src="icons\promo_icon1.png" alt=""></div>
@@ -139,7 +140,7 @@
             <div class="title">
                 Наша работа - больше чем просто доставка
             </div>
-            <div class="ourwork__splitter"></div>
+            <div class="red-splitter"></div>
             <div class="ourwork__subtitle">Мы организуем перевозки из Китая - оперативно и надежно, с учетом особенностей груза
                 и ваших требований по срокам и бюджету.</div>
             <div class="row">
@@ -171,6 +172,7 @@
     <section class="prices">
         <div class="container">
             <div class="title">Цены на любой вариант доставки</div>
+            <div class="red-splitter"></div>
             <div class="prices__subtitle">Перевозки грузов на дальние расстояния без каких-либо ограничений.
                 Любой груз доставим вовремя. </div>
         
@@ -234,11 +236,15 @@
             </div>
             <div class="prices__form-title">Заказать бесплатную консультацию</div>
             <form action="#" class="prices__form">
-                <div class="prices__crown"><img src="icons/pricesform-crown.png" alt="callcenter-girl"></div>
-                <input name="name" required placeholder="Ваше имя" type="text">
-                <input name="phone" required placeholder="Ваш телефон">
-                <input name="email" required placeholder="Ваш E-mail" type="email">
-                <button class="button button_submit">Отправить заявку</button>
+                <fieldset>
+                    <legend><div class="prices__legend"><img src="icons/pricesform-crown.png" alt="callcenter-girl"></div></legend>
+                    <!-- <div class="prices__crown"><img src="icons/pricesform-crown.png" alt="callcenter-girl"></div> -->
+                    <input name="name" required placeholder="Ваше имя" type="text">
+                    <input name="phone" required placeholder="Ваш телефон">
+                    <input name="email" required placeholder="Ваш E-mail" type="email">
+                    <div class="button__wrap"><button class="button button_submit">Отправить заявку</button></div>
+                </fieldset>
+                
             </form>
         </div>
     </section>
@@ -255,7 +261,7 @@
             <div class="title">
                 Схема работы с нами
             </div>
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col-md-3">
                     <div class="shemes-items">
                         <div class="shemes-items__imgwrap"><img src="icons/shemes_icon1.png" alt="box+pointer" class="shemes-items__img"></div>
@@ -265,48 +271,174 @@
                 </div>
                 <div class="col-md-3">
                     <div class="shemes-items">
-                        <img src="icons/shemes_icon2.png" alt="earth" class="shemes-items__img">
+                        <div class="shemes-items__imgwrap"><img src="icons/shemes_icon2.png" alt="earth" class="shemes-items__img"></div>
                         <div class="shemes-items__title">Аналитика доставки</div>
                         <div class="shemes-items__descr">Мы просчитываем варианты доставки Вашего груза</div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="shemes-items">
-                        <img src="icons/shemes_icon3.png" alt="paper_pen" class="shemes-items__img">
+                        <div class="shemes-items__imgwrap"><img src="icons/shemes_icon3.png" alt="paper_pen" class="shemes-items__img"></div>
                         <div class="shemes-items__title">Договор</div>
                         <div class="shemes-items__descr">Заключаем с Вами договор о поставке груза из Китая</div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="shemes-items">
-                        <img src="icons/shemes_icon4.png" alt="boxes_roof" class="shemes-items__img">
+                        <div class="shemes-items__imgwrap"><img src="icons/shemes_icon4.png" alt="boxes_roof" class="shemes-items__img"></div>
                         <div class="shemes-items__title">Доставка на наш склад</div>
                         <div class="shemes-items__descr">Связываемся с Вашим поставщиком в Китае и договариваемся о доставке груза на наш склад </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="shemes-items">
-                        <img src="icons/shemes_icon5.png" alt="two_guys" class="shemes-items__img">
+                        <div class="shemes-items__imgwrap"><img src="icons/shemes_icon5.png" alt="two_guys" class="shemes-items__img"></div>
                         <div class="shemes-items__title">Проверка груза</div>
                         <div class="shemes-items__descr">Мы проверяем, собираем и упаковываем перед отправкой Ваш груз на своём складе</div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="shemes-items">
-                        <img src="icons/shemes_icon6.png" alt="three_boxes" class="shemes-items__img">
+                        <div class="shemes-items__imgwrap"><img src="icons/shemes_icon6.png" alt="three_boxes" class="shemes-items__img"></div>
                         <div class="shemes-items__title">Доставка груза</div>
                         <div class="shemes-items__descr">Мы перевозим ваш груз до места назначения и производим таможенную очистку</div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="shemes-items">
-                        <img src="icons/shemes_icon7.png" alt="wallet" class="shemes-items__img">
+                        <div class="shemes-items__imgwrap"><img src="icons/shemes_icon7.png" alt="wallet" class="shemes-items__img"></div>
                         <div class="shemes-items__title">Оплата</div>
                         <div class="shemes-items__descr">Оплачиваете доставку груза при получении </div>
                     </div>
                 </div>
+            </div> -->
+            <div class="shemes__wrapper">
+                <div class="shemes-items">
+                    <div class="shemes-items__imgwrap"><img src="icons/shemes_icon1.png" alt=""></div>
+                    <div class="shemes-items__title">Заявка</div>
+                    <div class="shemes-items__descr">Вы оставляете заявку на нашем сайте или звоните нам</div>
+                </div>
+                <div class="shemes-items">
+                    <div class="shemes-items__imgwrap"><img src="icons/shemes_icon2.png" alt=""></div>
+                    <div class="shemes-items__title">Аналитика доставки</div>
+                    <div class="shemes-items__descr">Мы просчитываем варианты доставки Вашего груза</div>
+                </div>
+                <div class="shemes-items">
+                    <div class="shemes-items__imgwrap"><img src="icons/shemes_icon3.png" alt=""></div>
+                    <div class="shemes-items__title">Договор</div>
+                    <div class="shemes-items__descr">Заключаем с Вами договор о поставке груза из Китая</div>
+                </div>
+                <div class="shemes-items">
+                    <div class="shemes-items__imgwrap"><img src="icons/shemes_icon4.png" alt=""></div>
+                    <div class="shemes-items__title">Доставка на наш склад</div>
+                    <div class="shemes-items__descr">Связываемся с Вашим поставщиком в Китае и договариваемся о доставке груза на наш склад</div>
+                </div>
+                <div class="shemes-items">
+                    <div class="shemes-items__imgwrap"><img src="icons/shemes_icon5.png" alt=""></div>
+                    <div class="shemes-items__title">Проверка груза</div>
+                    <div class="shemes-items__descr">Мы проверяем, собираем и упаковываем перед отправкой Ваш груз на своём складе</div>
+                </div>
+                <div class="shemes-items">
+                    <div class="shemes-items__imgwrap"><img src="icons/shemes_icon6.png" alt=""></div>
+                    <div class="shemes-items__title">Доставка груза</div>
+                    <div class="shemes-items__descr">Мы перевозим ваш груз до места назначения и производим таможенную очистку</div>
+                </div>
+                <div class="shemes-items">
+                    <div class="shemes-items__imgwrap"><img src="icons/shemes_icon7.png" alt=""></div>
+                    <div class="shemes-items__title">Оплата</div>
+                    <div class="shemes-items__descr">Оплачиваете доставку груза при получении</div>
+                </div>
             </div>
         </div>
+       
     </section>
+    <section class="reviews">
+            <div class="title">отзывы наших клиентов</div>
+            <div class="red-splitter"></div>
+            <div class="reviews__subtitle">Мы всегда стараемся помочь клиентам, что бы они обращались к нам снова</div>
+            <div class="reviews__slider">
+                <div class="reviews__item">
+                    <!-- <button type="button" class="slick-prev"><img src="icons/prev-arrow.png"></button>
+                    <button type="button" class="slick-next"><img src="icons/next-arrow.png"></button> -->
+                    <img src="img/slider_av1.png" alt="">
+                    <div class="reviews__title">Анисимова Ольга
+                    </div>
+                    <div class="reviews__descr">Хочу рассказать о компании Global Opt. Самое главное что меня радует, это быстрый поиск и анализ определенного товара. Доставляла через компанию уже много раз, от расходных материалов для отеля, ло дольших партий детской одежды. Буду продолжать пользтваьбся услугами даной компании</div>
+                </div >
+                <div class="reviews__item"> 
+                    <img src="img/slider_av2.png" alt="">
+                    <div class="reviews__title">Валерий Иванов</div>
+                    <div class="reviews__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                </div>
+                <div class="reviews__item">
+                    <img src="img/slider_av3.png" alt="">
+                    <div class="reviews__title">Иван Валерьевич</div>
+                    <div class="reviews__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                </div>
+              </div>
+    </section>
+    <section class="any-questions">
+        <form action="#" class="any-questions__form">
+            <div class="any-questions__header">
+                <div class="any-questions__title">Остались вопросы?</div>
+                <div class="any-questions__subtitle">Напишите нам!</div>
+            </div>
+            <div class="any-questions__content">
+                <input required class="any-questions__input" placeholder="Ваше имя..." name="name" type="text">
+                <input required class="any-questions__input" placeholder="Ваш номер телефона..." type="text">
+                <input required class="any-questions__input" placeholder="Ваш e-mail..." name="email" type="text">
+                <textarea required placeholder="Сообщение..." class="any-questions__input textarea"></textarea>
+                <button class="button">Отправить заявку</button>
+            </div>
+        </form>
+    </section>
+    <section class="map">
+        <div class="map__info">
+            <div class="map__title">г. Москва</div>
+            <div class="map__descr">ул. Садовническая, дом 5, офис 4-6<br> 700 от м. Новокузнецкая<br> Тел: +7 (926) 423 01 00
+            <div class="map__footer">info@glopt.ru</div></div>
+        </div>
+        <div id="map-wrap">
+            <iframe style="pointer-events: none;" src="https://yandex.ru/map-widget/v1/?um=constructor%3A6142916a42101c50e64771996464b72a28bf45d7a29770d6a3c2d2e11e6dffec&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__up">
+                <div class="footer__item">
+                    <img src="img/footer-logo.png" alt="logo">
+                    <div class="footer__descr">Global Opt - Доставка грузов из Китая в Россию и СНГ</div>
+                </div>
+                <div class="footer__any-q"> <div class="footer__callus">
+                    <div class="footer__text">Есть вопросы?</div>
+                    <a href="tel:+79264230100" class="footer__main-phone">+7 (926) 423 01 00</a>
+                </div>
+                <button class="button">Перезвоните мне</button></div>
+                
+            </div>
+            <div class="footer__splitter"></div>
+            <div class="footer__down">
+                <div class="footer__year">© 2010 Scratch.com.ua</div>
+                <div class="footer__policy"><a href="#">Политика конфидециальности</a> </div>
+                <div class="footer__madeby">Создание сайта:<a href="#"><img src="icons/footer-icon.png" alt=""></a></div>
+            </div>
+        </div>
+    </footer>
+    <a href="#up" class="pageup">
+        <div class="pageup__block">
+            <img src="icons/pageup.svg" alt="pageup">
+            Наверх
+        </div>
+    </a>
+
+
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/script.js"></script>
+				
 </body>
 </html>

@@ -2,15 +2,23 @@
     min-height: 454px
     padding: 51px 0 46px 0
     background-color: #f3f3f3
-    .row
-        padding-top: 29px
+    
     &-items
         display: flex
         flex-direction: column
-        justify-content: center
+        justify-content: flex-start
         align-items: center
         text-align: center
         // height: 145px
+        width: 285px
+        &:nth-child(5)
+            width: 232px
+        &:nth-child(6)
+            width: 257px
+            margin-left: 46px
+            margin-right: 59px
+        &:nth-child(7)
+            width: 211px
         &__title
             color: $main-color
             font-size: 16px
@@ -20,3 +28,15 @@
             font-size: 14px
             font-weight: 300
             line-height: 20px
+            margin-top: 3px
+        &__imgwrap
+            height: 57px
+            width: 61px
+    &__wrapper
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        height: 309px
+        margin-top: 29px
+       
+            
