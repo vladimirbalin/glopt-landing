@@ -347,7 +347,7 @@
 
   </section>
   <section class="reviews" id="reviews">
-    <div class="container">
+    
       <div class="title">отзывы наших клиентов</div>
       <div class="red-splitter"></div>
       <div class="reviews__subtitle">Мы всегда стараемся помочь клиентам, что бы они обращались к нам снова</div>
@@ -361,21 +361,32 @@
             отеля, ло дольших партий детской одежды. Буду продолжать пользтваьбся услугами даной компании</div>
         </div>
         <div class="reviews__item">
-          <img src="img/slider_av2.png" alt="">
+          <img src="img/one.svg" alt="">
           <div class="reviews__title">Валерий Иванов</div>
           <div class="reviews__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
             laboris nisi ut aliquip ex ea commodo consequat.</div>
         </div>
         <div class="reviews__item">
-          <img src="img/slider_av3.png" alt="">
+          <img src="img/three.svg" alt="">
           <div class="reviews__title">Иван Валерьевич</div>
-          <div class="reviews__descr">t is a long established fact that a reader will be distracted by the readable
-            content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less
-            normal distribution of letters, as</div>
+          <div class="reviews__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nibh eros, gravida id
+            ultricies vitae, laoreet condimentum dolor. Donec eleifend urna a feugiat lobortis. Sed at est id lorem
+            aliquam dignissim. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos 
+            himenaeos. Aenean porttitor accumsan egestas. Pellentesque nec pharetra augue. Ut pulvinar, massa mollis
+            mollis bibendum, augue neque tincidunt massa, ut tempus lorem erat vitae ex.
+          </div>
+        </div>
+        <div class="reviews__item">
+          <img src="img/two.svg" alt="">
+          <div class="reviews__title">Василий Игнатьевич</div>
+          <div class="reviews__descr">Nam pellentesque facilisis lobortis. Nullam pharetra tempus quam at vulputate.
+            Duis eget tristique ipsum. Nam magna felis, ullamcorper quis ligula et, imperdiet consectetur eros. Orci
+            varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam bibendum eleifend 
+            nunc, a porta erat euismod r.</div>
         </div>
       </div>
-    </div>
+    
   </section>
   <section class="any-questions" id="any-questions">
     <div class="container">
@@ -395,19 +406,13 @@
     </div>
   </section>
   <section class="map">
-    <div class="map__info">
-      <p class="map__title">г. Москва</p>
-      <p class="map__descr">ул. Садовническая, дом 5, офис 4-6<br> 700 от м. Новокузнецкая<br> Тел: +7 (926) 423 01 00</p>
-        <p class="map__footer">info@glopt.ru</p>
-      </p>
-    </div>
-    <div id="map-wrap">
-      <!-- <iframe style="pointer-events: none;"
-        src="https://yandex.ru/map-widget/v1/?um=constructor%3A6142916a42101c50e64771996464b72a28bf45d7a29770d6a3c2d2e11e6dffec&amp;source=constructor"
-        width="100%" height="100%" frameborder="0"></iframe> -->
-
-
-    </div>
+    <div class="map__info moved">
+    <p class="map__title">г. Москва</p>
+    <p class="map__descr">ул. Садовническая, дом 5, офис 4-6<br> 700 от м. Новокузнецкая<br> Тел: +7 (926) 423 01 00</p>
+    <p class="map__footer">info@glopt.ru</p>
+    </p>
+  </div>
+    <div id="map-wrap"></div>
   </section>
   <footer class="footer">
     <div class="container">
@@ -434,28 +439,26 @@
     </div>
   </footer>
   <a href="#up" class="pageup">
-
-      <img src="icons/pageup.svg" alt="pageup">
-      UP
-
+    <img src="icons/pageup.svg" alt="pageup">
   </a>
   <div class="overlay">
-    <div class="modal" id="consultation">
-        <div class="modal__close">&times;</div>
-        <div class="modal__subtitle">
-            Просто заполните форму заявки
-        </div>
-        <div class="modal__descr">
-            и мы перезвоним вам в течении 10 минут
-        </div>
-        <form class="feed-form feed-form_mt25" action="#">
-            <input name="name" required placeholder="Ваше имя" type="text">
-            <input name="phone" required placeholder="Ваш телефон">
-            <input name="email" required placeholder="Ваш E-mail" type="email">
-            <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
-        </form>
+
+      <div class="modal" id="consultation">
+          <div class="modal__close">&times;</div>
+          <div class="modal__subtitle">
+              Просто заполните форму заявки
+          </div>
+          <div class="modal__descr">
+              и мы перезвоним вам в течении 10 минут
+          </div>
+          <form class="feed-form feed-form_mt25" action="#">
+              <input name="name" required placeholder="Ваше имя" type="text">
+              <input name="phone" required placeholder="Ваш телефон">
+              <input name="email" required placeholder="Ваш E-mail" type="email">
+              <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
+          </form>
+      </div>
     </div>
-  </div> <!---->
 
 
   <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>

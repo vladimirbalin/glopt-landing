@@ -2,18 +2,18 @@
     min-height: 470px
     padding: 51px 0 65px 0
     &__slider
-        width: 601px
+        width: 100%
         margin: 0 auto
         .slick-prev, .slick-next
             position: absolute
-            left: 188px
+            left: 42%
             top: 65px
             border: none
             background: rgba(255,255,255, .1)
             z-index: 1
         .slick-next
             left: auto
-            right: 193px
+            right: 42%
             img
                 width: 14px
                 height: 47px
@@ -24,10 +24,13 @@
         margin-top: 17px
         text-align: center
     &__item
+        transform: scale(.6)
+        opacity: .3
+        transition: 2s all
         margin-top: 31px
         position: relative
         img
-            max-width: 114px
+            width: 114px
             display: block
             margin: 0 auto
     &__title
@@ -42,3 +45,14 @@
         line-height: 22.01px
         text-align: justify
         text-align: center
+.slick-center
+  transform: scale(1)
+  transition: 2s all
+  opacity: 1
+  img
+    transition: 2s all 
+  .reviews__descr
+    font-size: 14px
+    width: 601px
+    margin: 0 auto
+    transform: translateX(-9%)
