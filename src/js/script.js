@@ -92,6 +92,25 @@ $(window).resize(function() {
     return false;
   });
 
+  function menuClickHandler(from, to){
+    $(`.${from}`).click(function(event) {
+      event.preventDefault();
+      $([document.documentElement, document.body]).animate({
+          scrollTop: $(`.${to}`).offset().top
+      }, 1000);
+    });
+  }
+  menuClickHandler('advantages-js', 'advantages');
+  menuClickHandler('ourwork-js', 'ourwork');
+  menuClickHandler('prices-js', 'prices');
+  menuClickHandler('shemes-js', 'shemes');
+  menuClickHandler('reviews-js', 'reviews');
+  menuClickHandler('contacts-js', 'map');
+  
+
+
+
+
   //modal
   $('[data-modal=consultation]').on('click', function () {
     $('.overlay, #consultation').fadeIn('slow');
