@@ -18,19 +18,24 @@
         <a href="#" class="header__logo">
           <img src="img/main_logo.png" alt="logo">
         </a>
-        <ul class="header__menu">
-          <li class="header__menu-item"><a href="#" class="header__menu-link advantages-js">Преимущества</a></li>
-          <li class="header__menu-item"><a href="#" class="header__menu-link ourwork-js">Наша работа</a></li>
-          <li class="header__menu-item"><a href="#" class="header__menu-link prices-js">Цены</a></li>
-          <li class="header__menu-item"><a href="#" class="header__menu-link shemes-js">Схема работы</a></li>
-          <li class="header__menu-item"><a href="#" class="header__menu-link reviews-js">Отзывы</a></li>
-          <li class="header__menu-item"><a href="#" class="header__menu-link contacts-js">Контакты</a></li>
-        </ul>
+        <nav>
+          <ul class="header__menu">
+            <li class="header__menu-item"><a href="#" class="header__menu-link" data-to="advantages-js">Преимущества</a></li>
+            <li class="header__menu-item"><a href="#" class="header__menu-link" data-to="ourwork-js">Наша работа</a></li>
+            <li class="header__menu-item"><a href="#" class="header__menu-link" data-to="prices-js">Цены</a></li>
+            <li class="header__menu-item"><a href="#" class="header__menu-link" data-to="shemes-js">Схема работы</a></li>
+            <li class="header__menu-item"><a href="#" class="header__menu-link" data-to="reviews-js">Отзывы</a></li>
+            <li class="header__menu-item"><a href="#" class="header__menu-link" data-to="map-js">Контакты</a></li>
+          </ul>
+        </nav>
         <div class="header__callus">
-          <div class="header__text">Есть вопросы?</div>
-          <a href="tel:+79264230100" class="header__main-phone">+7 (926) 423 01 00</a>
+          <div class="header__callus-left">
+            <div class="header__text">Есть вопросы?</div>
+            <a href="tel:+79264230100" class="header__main-phone">+7 (926) 423 01 00</a>  
+          </div>
+          <button data-modal="consultation" class="button">Перезвоните мне</button>
         </div>
-        <button data-modal="consultation" class="button">Перезвоните мне</button>
+        
         <div class="hamburger">
           <span></span>
           <span></span>
@@ -170,21 +175,21 @@
         груза
         и ваших требований по срокам и бюджету.</div>
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-sm-12 col-md-4 col-10">
           <img src="img/hands_box.jpg" alt="hands_box">
           <div class="ourwork__title">Страховка груза</div>
           <div class="ourwork__descr">Все грузы, логистику которых осуществляет Global Opt, застрахованы. Мы гарантируем
             полное возмещение стоимости груза в случаях, предусмотренных страхо- вым соглашением. Все ваши тревоги наша
             компания берет на себя.</div>
         </div>
-        <div class="col-md-4">
+        <div class="col-sm-12 col-md-4 col-10">
           <img src="img/ship.jpg" alt="ship">
           <div class="ourwork__title">Логистика последней мили</div>
           <div class="ourwork__descr">Мы осуществляем доставку вашего груза до конкретного адреса. Привоз
             согласовывается менед- жерами по телефону, предварительно за сутки и за час до доставки. Также мы
             предоставляем услуги грузчи- ков по месту доставки груза.</div>
         </div>
-        <div class="col-md-4">
+        <div class="col-sm-12 col-md-4 col-10">
           <img src="img/man.jpg" alt="man">
           <div class="ourwork__title">Мы всегда смотрим вперед</div>
           <div class="ourwork__descr">Философия нашей компании, делать себя и своих партнеров по всему миру, успешными и
@@ -280,9 +285,12 @@
           <legend>
             <div class="prices__legend"><img src="icons/pricesform-crown.png" alt="callcenter-girl"></div>
           </legend>
-          <input name="name" required placeholder="Ваше имя" type="text">
-          <input name="phone" required placeholder="Ваш телефон">
-          <input name="email" required placeholder="Ваш E-mail" type="email">
+          <div class="input-container">
+            <div class="input-item"><input name="name" required placeholder="Ваше имя" type="text"></div>
+            <div class="input-item"><input name="phone" required placeholder="Ваш телефон"></div>
+            <div class="input-item"><input name="email" required placeholder="Ваш E-mail" type="email"></div>
+            
+          </div>
           <div class="button__wrap"><button class="button button_submit">Отправить заявку</button></div>
         </fieldset>
 

@@ -65,18 +65,31 @@
         width: 100%
         height: 166px
         position: relative
+        .input-container
+          display: flex
+          justify-content: space-around
+          align-items: center
+          .input-item
+            display: flex
+            justify-content: center
+            align-items: center
+            flex-direction: column
+            label
+              color: red
+              font-size: 12px
         fieldset
             border: 1px solid #898989
             position: relative
+            height: 240px
         input
             border: 1px solid #898989
             height: 47px
             width: 270px
             border-radius: 25px
-            margin-bottom: 51px
+            // margin-bottom: 51px
             padding: 0 28px
-            &:nth-child(2)
-                margin-left: 160px
+            // &:nth-child(2)
+            //     margin-left: 160px
         legend
             width: auto
             text-align: center

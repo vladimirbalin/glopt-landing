@@ -13,6 +13,27 @@
     .reviews__descr
       width: 450px
 @media ( max-width: 1199px )
+  .promo    
+    &__content
+      margin-top: 30px
+    .header
+      display: flex
+      justify-content: space-between
+      &__logo
+        margin-right: 5px
+      &__menu
+        margin: 0
+      &__text
+        display: none
+      &__main-phone
+        font-size: 16px
+      &__callus
+        flex-direction: column
+        &-left
+          margin-right: 0
+          padding-left: 10px
+        .button
+          margin-top: 5px
   .ourwork
     .row
       img
@@ -32,6 +53,15 @@
     .slick-next
       left: auto
       right: 39%
+  .shemes
+    min-height: 580px
+    padding: 35px 0 0px 0
+    &__wrapper
+      .shemes-items
+        margin: 20px 0 0 0
+        padding: 0 15px
+        text-align: justify
+        width: auto
 //=======================================
 @media ( max-width: 991px ) 
   .title
@@ -73,7 +103,7 @@
   .prices
     &-item
       &__title-text
-        font-size: 15px
+        font-size: 14px
       &__subtitle
         font-size: 11px
       &__price
@@ -90,14 +120,15 @@
           margin-top: 10px
     &__form
       fieldset
-        height: 220px
+        height: 100%
       input
         width: 220px
         margin: 0
         &:nth-child(2)
           margin-left: 25px
   .shemes
-    padding: 35px 0 10px 0
+    min-height: 480px
+    padding: 35px 0 20px 0
     &__wrapper
       margin-top: 10px
     &-items
@@ -108,7 +139,7 @@
       &__title
         font-size: 14px
       &__descr
-        font-size: 12px
+        font-size: 14px
       &:nth-child(5), &:nth-child(6), &:nth-child(7)
         margin-left: 0
         margin-right: 0
@@ -157,7 +188,7 @@
         position: fixed	
         top: 0
         left: -100%
-        width: 50%
+        width: 75%
         height: 100vh
         padding: 20px 15px
         flex-direction: column
@@ -180,6 +211,9 @@
           padding-top: 10px
       &__callus
         display: flex
+        flex-direction: row
+        justify-content: space-evenly
+        width: 100%
       &__text
         font-size: 13px
       &__main-phone
@@ -235,7 +269,8 @@
       &__descr
         text-align: justify
       &__text
-        line-height: 18px
+        font-size: 14px
+        line-height: 16px
   .ourwork
     padding: 40px 0 20px 0
     .row
@@ -247,34 +282,53 @@
       font-size: 18px
       padding-top: 7px
     &__descr
+      font-size: 14px
+      line-height: 14px
       padding-bottom: 30px
   .china-agent
     padding: 30px 0 20px 0
   .prices
     min-height: 1290px
+    legend      
+      padding: 0
+    &__legend
+      width: 60px
+      height: 60px
+      img
+        width: 90%
     &__subtitle
-      font-size: 15px
+      font-size: 16px
+      line-height: 16px
     &-item
       height: 300px
       .button
         width: 70%
     &__form
-      input
+      padding-top: 15px
+      &-title
+        font-size: 16px
+        line-height: 16px
+      height: 345px
+      .input-container 
+        flex-direction: column
+      .input-item
+        margin-top: 10px        
         width: 80%
-        margin: 0 0 10px 50px
-        &:nth-child(2)
-          margin-left: 50px
+        font-size: 14px
+        input
+          width: 100%
       fieldset
-        height: 313px
+        height: 100%
   .managers
     padding: 30px 0 20px 0
   .shemes
-    min-height: 480px
+    min-height: 555px
     &-items
       max-width: 180px
   .reviews
     &__subtitle
-      font-size: 18px
+      font-size: 16px
+      line-height: 16px
     &__slider
       width: 100%
       .slick-prev, .slick-next
@@ -291,13 +345,10 @@
       display: block
       margin: 0 auto
   .any-questions input
-    margin-left: 0
-    width: 80%    
+    width: 80%
     &:nth-child(1)
-      margin-left: 0
       display: block
-      margin: 0 auto
-      margin-top: 20px
+      margin: 20px auto 0
     display: block
     margin: 5px auto
   .footer
@@ -326,22 +377,46 @@
     &__title
       font-size: 42px
       line-height: 42px
-
   .prices
     .row
       margin-left: 15px
       margin-right: 15px
+    &__form
+      height: 356px
+      .input-item
+        margin-top: 13px
+      &-title
+        margin-top: 10px
+      fieldset
+        height: 100%
+      .input-container
+        flex-direction: column
+        .input-item
+          width: 80%
   .advantages
     padding: 30px 20px
+    &-item
+      flex-direction: row
     .col-10
       margin: 0 auto
   .ourwork
-    
+    .col-10
+      margin: 0 auto
+    &__descr
+      line-height: 16px
   .china-agent
     
   .prices
     
     min-height: 1950px
+    &-item__descr
+      font-size: 14px
+      line-height: 14px
+  .shemes
+    min-height: 500px
+    &-items__descr
+      font-size: 14px
+      line-height: 14px
   .reviews
     
   .any-questions
@@ -351,4 +426,125 @@
       font-size: 30px
   .pageup
     width: 55px
-    
+  .footer
+    &__descr
+      display: none
+//=======================================  
+@media ( max-width: 540px )
+  .promo
+    &__descr
+      line-height: 15px
+    .header
+      &__main-phone
+        font-size: 12px
+      &__callus
+        .button
+          font-size: 10px
+          width: 110px
+  .reviews
+    padding-top: 30px
+    .slick
+      &-center
+        .reviews__descr
+          width: 100%
+          line-height: 16px
+  .ourwork
+    &__subtitle
+      line-height: 18px
+  .shemes
+    &__wrapper
+      height: 100%
+      justify-content: space-evenly
+      .shemes-items
+        padding: 0
+        margin: 0
+  .footer
+    padding-top: 20px
+// ============================================ 440px
+@media ( max-width: 440px )
+  .promo
+    min-height: 400px
+    &__uptext
+      font-size: 16px
+      line-height: 16px
+    &__title
+      font-size: 18px
+      line-height: 18px
+      margin: 20px
+    &__subtitle
+      font-size: 14px
+      line-height: 14px
+    .header 
+      padding-top: 0
+  .title
+    font-size: 18px
+  .promo
+    min-height: 400px
+    &__cards
+      display: none
+    .header
+      &__callus
+        flex-direction: column
+        align-items: center
+        .button
+          margin-right: 0
+    .button
+      font-size: 12px
+      width: 160px
+  .advantages
+    &-item
+      margin-top: 10px
+      &__title
+        font-size: 14px
+        line-height: 14px
+      &__img  
+        margin-right: 5px
+        display: flex
+        align-items: center
+        img
+          width: 40px
+          height: 40px
+  .ourwork
+    &__subtitle
+      font-size: 16px
+      line-height: 16px
+  .china-agent
+    min-height: 293px
+    padding: 20px 20px 10px 20px
+    &__title
+      font-size: 18px
+    &__text
+      font-size: 16px
+      line-height: 16px
+  .prices
+    &__subtitle
+  .managers
+    min-height: 270px 
+    &__title
+      font-size: 16px
+      line-height: 16px
+    &__text
+      font-size: 14px
+      line-height: 14px
+  .shemes
+    &__wrapper
+      margin-top: 20px
+      
+      .shemes-items
+        max-width: 80%
+        padding-top: 20px
+  .reviews
+    padding-right: 5px
+    padding-left: 5px
+  .any-questions
+    &__title
+      font-size: 18px
+      line-height: 18px
+    &__subtitle
+      font-size: 16px
+      line-height: 16px
+  .footer
+    &__callus
+      margin-right: 0
+    .button
+      max-width: 120px

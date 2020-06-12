@@ -33,7 +33,6 @@ gulp.task('stylesnotmini', function() {
       .pipe(sass().on('error', sass.logError))
       .pipe(rename({suffix: '.min', prefix: ''}))
       .pipe(autoprefixer())
-      .pipe(cleanCSS({compatibility: 'ie8'}))
       .pipe(gulp.dest("src/css"));
 });
 

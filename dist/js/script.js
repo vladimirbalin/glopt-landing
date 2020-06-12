@@ -43,7 +43,7 @@ $(document).ready(function () {
  
   DG.then(function() {
     let myIcon = DG.icon({
-      iconUrl: 'icons/map_marker.png'
+      iconUrl: 'icons/map-marker.png'
     });
     let map = DG.map('map-wrap', {
         center: [55.748226, 37.628134],
@@ -65,17 +65,17 @@ $(document).ready(function () {
     $('.map__info').css('opacity', '1');
   });
 
-  function myFunction() {
+  function mapInfoMove() {
     $(window).width() < 1000 ? 
       $('.map__info').addClass('moved') :
       $('.map__info').removeClass('moved');
-}
+    }
 
-myFunction();
+  mapInfoMove();
 
-$(window).resize(function() {
-    myFunction();
-});
+  $(window).resize(function() {
+    mapInfoMove();
+  });
 
   //pageup and  
   $(window).scroll(function () {
@@ -91,25 +91,12 @@ $(window).resize(function() {
     $("html, body").animate({ scrollTop: $(_href).offset().top + "px" });
     return false;
   });
-
-  function menuClickHandler(from, to){
-    $(`.${from}`).click(function(event) {
-      event.preventDefault();
-      $([document.documentElement, document.body]).animate({
-          scrollTop: $(`.${to}`).offset().top
-      }, 1000);
-    });
-  }
-  menuClickHandler('advantages-js', 'advantages');
-  menuClickHandler('ourwork-js', 'ourwork');
-  menuClickHandler('prices-js', 'prices');
-  menuClickHandler('shemes-js', 'shemes');
-  menuClickHandler('reviews-js', 'reviews');
-  menuClickHandler('contacts-js', 'map');
   
-
-
-
+  $('.header__menu-link').click(event => {
+      const data = (event.target.dataset.to).slice(0, -3);
+      event.preventDefault();
+      $("html, body").animate({ scrollTop: $(`.${data}`).offset().top}, 1000);      
+  });
 
   //modal
   $('[data-modal=consultation]').on('click', function () {
@@ -162,6 +149,8 @@ $(window).resize(function() {
   }
 
   validateForms('#consultation form');
+  validateForms('.any-questions__content');
+  validateForms('.prices__form');
   $('input[name=phone]').mask("+7 (999) 999-99-99");
 
 });
