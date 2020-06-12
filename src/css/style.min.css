@@ -2590,9 +2590,12 @@ html {
         transition: .3s all; }
     .promo .header__callus {
       display: flex;
-      flex-direction: column;
-      justify-content: center;
-      margin-right: 19px; }
+      justify-content: center; }
+      .promo .header__callus-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 19px; }
     .promo .header__text {
       color: #ffffff;
       font-size: 14px;
@@ -3323,6 +3326,26 @@ html {
     width: 450px; } }
 
 @media (max-width: 1199px) {
+  .promo__content {
+    margin-top: 30px; }
+  .promo .header {
+    display: flex;
+    justify-content: space-between; }
+    .promo .header__logo {
+      margin-right: 5px; }
+    .promo .header__menu {
+      margin: 0; }
+    .promo .header__text {
+      display: none; }
+    .promo .header__main-phone {
+      font-size: 16px; }
+    .promo .header__callus {
+      flex-direction: column; }
+      .promo .header__callus-left {
+        margin-right: 0;
+        padding-left: 10px; }
+      .promo .header__callus .button {
+        margin-top: 5px; }
   .ourwork .row img {
     width: 100%; }
   .prices__form input:nth-child(2) {
@@ -3336,7 +3359,15 @@ html {
     left: 39%; }
   .slick-center .slick-next {
     left: auto;
-    right: 39%; } }
+    right: 39%; }
+  .shemes {
+    min-height: 580px;
+    padding: 35px 0 0px 0; }
+    .shemes__wrapper .shemes-items {
+      margin: 20px 0 0 0;
+      padding: 0 15px;
+      text-align: justify;
+      width: auto; } }
 
 @media (max-width: 991px) {
   .title {
@@ -3372,7 +3403,7 @@ html {
     padding-left: 2px;
     padding-right: 2px; }
   .prices-item__title-text {
-    font-size: 15px; }
+    font-size: 14px; }
   .prices-item__subtitle {
     font-size: 11px; }
   .prices-item__price {
@@ -3388,14 +3419,15 @@ html {
       width: 100%;
       margin-top: 10px; }
   .prices__form fieldset {
-    height: 220px; }
+    height: 100%; }
   .prices__form input {
     width: 220px;
     margin: 0; }
     .prices__form input:nth-child(2) {
       margin-left: 25px; }
   .shemes {
-    padding: 35px 0 10px 0; }
+    min-height: 480px;
+    padding: 35px 0 20px 0; }
     .shemes__wrapper {
       margin-top: 10px; }
     .shemes-items {
@@ -3406,7 +3438,7 @@ html {
       .shemes-items__title {
         font-size: 14px; }
       .shemes-items__descr {
-        font-size: 12px; }
+        font-size: 14px; }
       .shemes-items:nth-child(5), .shemes-items:nth-child(6), .shemes-items:nth-child(7) {
         margin-left: 0;
         margin-right: 0;
@@ -3473,7 +3505,10 @@ html {
           font-size: 28px;
           padding-top: 10px; }
       .promo .header__callus {
-        display: flex; }
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%; }
       .promo .header__text {
         font-size: 13px; }
       .promo .header__main-phone {
@@ -3529,7 +3564,8 @@ html {
       .advantages-item__descr {
         text-align: justify; }
       .advantages-item__text {
-        line-height: 18px; }
+        font-size: 14px;
+        line-height: 16px; }
   .ourwork {
     padding: 40px 0 20px 0; }
     .ourwork .row img {
@@ -3540,32 +3576,52 @@ html {
       font-size: 18px;
       padding-top: 7px; }
     .ourwork__descr {
+      font-size: 14px;
+      line-height: 14px;
       padding-bottom: 30px; }
   .china-agent {
     padding: 30px 0 20px 0; }
   .prices {
     min-height: 1290px; }
+    .prices legend {
+      padding: 0; }
+    .prices__legend {
+      width: 60px;
+      height: 60px; }
+      .prices__legend img {
+        width: 90%; }
     .prices__subtitle {
-      font-size: 15px; }
+      font-size: 16px;
+      line-height: 16px; }
     .prices-item {
       height: 300px; }
       .prices-item .button {
         width: 70%; }
-    .prices__form .input-item {
-      width: 33%;
-      font-size: 14px; }
-      .prices__form .input-item input {
-        width: 100%; }
-    .prices__form fieldset {
-      height: 250px; }
+    .prices__form {
+      padding-top: 15px;
+      height: 345px; }
+      .prices__form-title {
+        font-size: 16px;
+        line-height: 16px; }
+      .prices__form .input-container {
+        flex-direction: column; }
+      .prices__form .input-item {
+        margin-top: 10px;
+        width: 80%;
+        font-size: 14px; }
+        .prices__form .input-item input {
+          width: 100%; }
+      .prices__form fieldset {
+        height: 100%; }
   .managers {
     padding: 30px 0 20px 0; }
   .shemes {
-    min-height: 480px; }
+    min-height: 555px; }
     .shemes-items {
       max-width: 180px; }
   .reviews__subtitle {
-    font-size: 18px; }
+    font-size: 16px;
+    line-height: 16px; }
   .reviews__slider {
     width: 100%; }
     .reviews__slider .slick-prev, .reviews__slider .slick-next {
@@ -3616,21 +3672,144 @@ html {
   .prices .row {
     margin-left: 15px;
     margin-right: 15px; }
-  .prices__form-title {
-    margin-top: 10px; }
-  .prices__form fieldset {
-    height: 300px; }
-  .prices__form .input-container {
-    flex-direction: column; }
-    .prices__form .input-container .input-item {
-      width: 80%; }
+  .prices__form {
+    height: 356px; }
+    .prices__form .input-item {
+      margin-top: 13px; }
+    .prices__form-title {
+      margin-top: 10px; }
+    .prices__form fieldset {
+      height: 100%; }
+    .prices__form .input-container {
+      flex-direction: column; }
+      .prices__form .input-container .input-item {
+        width: 80%; }
   .advantages {
     padding: 30px 20px; }
+    .advantages-item {
+      flex-direction: row; }
     .advantages .col-10 {
       margin: 0 auto; }
+  .ourwork .col-10 {
+    margin: 0 auto; }
+  .ourwork__descr {
+    line-height: 16px; }
   .prices {
     min-height: 1950px; }
+    .prices-item__descr {
+      font-size: 14px;
+      line-height: 14px; }
+  .shemes {
+    min-height: 500px; }
+    .shemes-items__descr {
+      font-size: 14px;
+      line-height: 14px; }
   .any-questions__title {
     font-size: 30px; }
   .pageup {
-    width: 55px; } }
+    width: 55px; }
+  .footer__descr {
+    display: none; } }
+
+@media (max-width: 540px) {
+  .promo__descr {
+    line-height: 15px; }
+  .promo .header__main-phone {
+    font-size: 12px; }
+  .promo .header__callus .button {
+    font-size: 10px;
+    width: 110px; }
+  .reviews {
+    padding-top: 30px; }
+    .reviews .slick-center .reviews__descr {
+      width: 100%;
+      line-height: 16px; }
+  .ourwork__subtitle {
+    line-height: 18px; }
+  .shemes__wrapper {
+    height: 100%;
+    justify-content: space-evenly; }
+    .shemes__wrapper .shemes-items {
+      padding: 0;
+      margin: 0; }
+  .footer {
+    padding-top: 20px; } }
+
+@media (max-width: 440px) {
+  .promo {
+    min-height: 400px; }
+    .promo__uptext {
+      font-size: 16px;
+      line-height: 16px; }
+    .promo__title {
+      font-size: 18px;
+      line-height: 18px;
+      margin: 20px; }
+    .promo__subtitle {
+      font-size: 14px;
+      line-height: 14px; }
+    .promo .header {
+      padding-top: 0; }
+  .title {
+    font-size: 18px; }
+  .promo {
+    min-height: 400px; }
+    .promo__cards {
+      display: none; }
+    .promo .header__callus {
+      flex-direction: column;
+      align-items: center; }
+      .promo .header__callus .button {
+        margin-right: 0; }
+    .promo .button {
+      font-size: 12px;
+      width: 160px; }
+  .advantages-item {
+    margin-top: 10px; }
+    .advantages-item__title {
+      font-size: 14px;
+      line-height: 14px; }
+    .advantages-item__img {
+      margin-right: 5px;
+      display: flex;
+      align-items: center; }
+      .advantages-item__img img {
+        width: 40px;
+        height: 40px; }
+  .ourwork__subtitle {
+    font-size: 16px;
+    line-height: 16px; }
+  .china-agent {
+    min-height: 293px;
+    padding: 20px 20px 10px 20px; }
+    .china-agent__title {
+      font-size: 18px; }
+    .china-agent__text {
+      font-size: 16px;
+      line-height: 16px; }
+  .managers {
+    min-height: 270px; }
+    .managers__title {
+      font-size: 16px;
+      line-height: 16px; }
+    .managers__text {
+      font-size: 14px;
+      line-height: 14px; }
+  .shemes__wrapper {
+    margin-top: 20px; }
+    .shemes__wrapper .shemes-items {
+      max-width: 80%;
+      padding-top: 20px; }
+  .reviews {
+    padding-right: 5px;
+    padding-left: 5px; }
+  .any-questions__title {
+    font-size: 18px;
+    line-height: 18px; }
+  .any-questions__subtitle {
+    font-size: 16px;
+    line-height: 16px; }
+  .footer__callus {
+    margin-right: 0; }
+  .footer .button {
+    max-width: 120px; } }
