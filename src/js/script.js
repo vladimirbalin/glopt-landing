@@ -82,7 +82,7 @@ $(document).ready(function () {
     if ($(this).scrollTop() > 800) {
       $('.pageup').fadeIn();
     } else {
-      $('.pageup').fadeOut();
+      $('.pageup').fadeOut(500);
     }
   });
   //Smooth scroll 
