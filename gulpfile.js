@@ -31,7 +31,7 @@ gulp.task('styles', function() {
 gulp.task('stylesnotmini', function() {
   return gulp.src("src/sass/**/*.+(scss|sass)")
       .pipe(sass().on('error', sass.logError))
-      .pipe(rename({suffix: '.min', prefix: ''}))
+      .pipe(rename({suffix: '', prefix: ''}))
       .pipe(autoprefixer())
       .pipe(gulp.dest("src/css"));
 });
