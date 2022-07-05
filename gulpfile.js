@@ -71,14 +71,12 @@ gulp.task('images', function () {
 
 gulp.task('watch', gulp.parallel(
                                     'watch', 'server', 'styles', 'scripts',
-                                    'icons', 'mailer', 'html', 'images',
-                                    'stylesnotmini'
+                                    'icons', 'mailer', 'html', 'images'
                     )
 );
 
 gulp.task('deploy', gulp.parallel(
                                 'styles', 'scripts',
-                                'icons', 'mailer', 'html', 'images',
-                                'stylesnotmini'
+                                'icons', 'mailer', 'html', 'images'
                     )
 );
